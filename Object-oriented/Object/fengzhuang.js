@@ -74,5 +74,10 @@ dwn(m1.__proto__.constructor.country); //china, 相当于myObject.country;
 // __proto__属性保存了对创建该对象的构造函数引用prototype属性的引用
 // 也就是构造函数可以引用prototype,基于该构造函数生成的实例就可以应用__proto__，其结果是一样的
 
-// 可是按照javascript的说 法，function定义的这个myObject就是一个Object(对象),而且还是一个很特殊的对象，这个使用function定义的对象与使用new 操作符生成的对象之间有一个重要的区别。这个区别就是function定义的对象有一个prototype属性，使用new生成的对象就没有这个prototype属性。
-// prototype属性又指向了一个prototype对象，注意prototype属性与prototype对象是两个不同的东西，要注意区别。在prototype对象中又有一个constructor属性，这个constructor属性同样指向一个constructor对象，而这个constructor对象恰恰就是这个function函数本身。
+// 可是按照javascript的说 法，function定义的这个myObject就是一个Object(对象),而且还是一个很特殊的对象，
+// 这个使用function定义的对象与使用new 操作符生成的对象之间有一个重要的区别。这个区别就是
+// function定义的对象有一个prototype属性，使用new生成的对象就没有这个prototype属性。
+
+// prototype属性又指向了一个prototype对象，注意prototype属性与prototype对象是两个不同的东西，要注意区别。
+// 在prototype对象中又有一个constructor属性，这个constructor属性同样指向一个constructor对象，
+// 而这个constructor对象恰恰就是这个function函数本身。
